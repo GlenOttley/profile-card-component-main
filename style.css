@@ -1,0 +1,119 @@
+:root {
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 18px;
+	--dark-cyan: hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--dark-grayish-blue: hsl(227, 10%, 46%);
+	--dark-gray: hsl(0, 0%, 59%);
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: hsl(185, 75%, 39%);
+	background-image: url(images/bg-pattern-top.svg),
+	url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 40vw bottom 43vh, 
+  left 43vw top 40vh;
+  height: 100vh;
+}
+
+img {
+	max-width: 100%
+}
+
+h1 {
+	color: var(--very-dark-desaturated-blue);
+	font-size: 1rem;
+}
+
+hr {
+	background-color: var(--dark-gray);
+	border: none;
+	height: 1px;
+	width: 100%;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 87.5%;
+	max-width: 350px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.card__pattern {
+	background-image: url(images/bg-pattern-card.svg);
+	padding: 3.5em;
+	position: relative;
+	margin-bottom: 4em
+}
+
+.card__picture {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 75px;
+	border-radius: 100px;
+	border: 6px solid white;
+	overflow: hidden;
+	height: 105px;
+	width: 105px;
+}
+
+.card__information {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.card__name-age {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	margin-bottom: 1em;
+}
+
+.card__age {
+	color: var(--dark-grayish-blue);
+	font-size: 1rem;
+}
+
+.card__location {
+	color: var(--dark-grayish-blue);
+	font-size: .8rem;
+	margin-bottom: 1.5em;
+}
+
+.card__stats {
+	display: flex;
+	justify-content: space-around;
+	padding: 1.5em;
+}
+
+.card__stats-child {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	width: 100%;
+}
+
+.card__stats-category {
+	color: var(--dark-gray);
+	font-size: 0.55rem;
+	letter-spacing: 0.15em;
+}
+
